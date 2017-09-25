@@ -49,7 +49,7 @@ public class Deque {
 	public String removerUltimoNo(){
 		if(!(this.primeiroNo == null)){
 			NodeDeque novoNo = this.primeiroNo;
-			for(int i = 0; i < inseridos; i++){
+			for(int i = 0; i < inseridos-2; i++){
 				novoNo = novoNo.getNext();
 			}
 			novoNo.proximoNo = null;
