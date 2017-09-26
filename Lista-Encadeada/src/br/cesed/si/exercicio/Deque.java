@@ -36,6 +36,7 @@ public class Deque {
 	public void addUltimoNo(String valor){
 		if(this.primeiroNo == null){
 			this.primeiroNo = new NodeDeque(valor);
+			inseridos ++;
 		}else {
 			NodeDeque atual = this.primeiroNo;
 			while(atual.proximoNo != null){
